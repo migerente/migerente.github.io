@@ -1,0 +1,23 @@
+.login-signup-buttons {
+    /* border: 2px solid black; */
+    margin-left: auto;
+    padding: 0 2em;
+    height: 100%;
+    display: flex;
+}
+.button {
+    margin: auto;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.button:hover{
+    background-color: #EFEFEF;
+}
+.login {
+    margin-right: 1em;
+}
+.container {
+    text-align: center;
+    margin-top: 5em;
+}

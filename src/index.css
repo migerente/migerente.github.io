@@ -9,7 +9,12 @@ html, body, #root {
     height: 100%;
     width: 100%;
 }
-
+a {
+    text-decoration: none;
+}
+a:visited {
+    all: unset;
+}
 .NavBar {
     background-color: #3BACB6;
     height: 3em;
@@ -24,9 +29,6 @@ html, body, #root {
     font-family: Shanti;
     padding-left: 1em;
 }
-.NavBar > a:visited {
-    all: unset;
-}
 .SideBar {
     background-color: #82DBD8;
     width: 5em;
@@ -36,7 +38,6 @@ html, body, #root {
 }
 .NavButton {
     /* all: unset; */
-    text-decoration: none;
     padding: 1em 0;
     display: flex;
     flex-direction: column;
@@ -45,9 +46,6 @@ html, body, #root {
 }
 .NavButton:hover {
     background-color: #EFEFEF;
-}
-.NavButton:visited {
-    all: unset;
 }
 .NavButton > img {
     width: 3em;

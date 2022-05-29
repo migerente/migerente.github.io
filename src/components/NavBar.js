@@ -1,7 +1,10 @@
-export default function NavBar() {
+import {Link} from 'react-router-dom'
+
+export default function NavBar(props) {
     return (
         <div className="NavBar">
-            <a href="/">miGerente</a>
+            <Link to="/">miGerente</Link>
+            {props.children}
         </div>
     )
 }

@@ -1,11 +1,11 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Main from './Main';
 import './index.css'
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <Main />
   </StrictMode>,
   document.querySelector('#root')
 );
