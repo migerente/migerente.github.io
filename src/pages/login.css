@@ -1,0 +1,24 @@
+.login-box {
+    margin: auto;
+    margin-top: 8em;
+    width: 20em;
+    height: 25em;
+    border: 0.4em solid #82DBD8;
+    /* background-color: #82DBD8; */
+    border-radius: 2em;
+    text-align: center;
+    padding: 2em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.registrese-aqui {
+    padding-top: 1em;
+}
+
+.registrese-aqui a:hover {
+    text-decoration: underline;
+}

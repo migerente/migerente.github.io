@@ -1,34 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Shanti");
 
-*,  *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-html, body, #root {
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root {
     height: 100%;
     width: 100%;
 }
+
 a {
     text-decoration: none;
 }
+
 a:visited {
     all: unset;
 }
+
 .NavBar {
     background-color: #3BACB6;
     height: 3em;
     display: flex;
     align-items: center;
 }
-.NavBar > a {
+
+.NavBar>a {
     text-decoration: none;
     font-weight: 500;
-    font-family: sans-serif;
     font-size: 1.8em;
     font-family: Shanti;
     padding-left: 1em;
 }
+
 .SideBar {
     background-color: #82DBD8;
     width: 5em;
@@ -36,6 +49,7 @@ a:visited {
     display: flex;
     flex-direction: column;
 }
+
 .NavButton {
     /* all: unset; */
     padding: 1em 0;
@@ -44,13 +58,18 @@ a:visited {
     align-items: center;
     /* justify-content: center; */
 }
+
 .NavButton:hover {
     background-color: #EFEFEF;
 }
-.NavButton > img {
+
+.NavButton>img {
     width: 3em;
     height: 3em;
 }
+
+
+
 .Panel {
     position: absolute;
     left: 5em;
@@ -58,4 +77,33 @@ a:visited {
     width: calc(100% - 5em);
     height: calc(100% - 3em);
     /* border: 2px solid black; */
+}
+
+table {
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+td,
+th {
+    padding: 0.5em;
+}
+
+table,
+td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.panel-empleados {
+    text-align: center;
+}
+
+.panel-empleados>h3 {
+    padding: 1em;
+}
+
+.form-group {
+    padding: 0.5em 0;
 }

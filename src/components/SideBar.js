@@ -7,10 +7,10 @@ import logoEmpleados from '../assets/employees.svg';
 export default function SideBar() {
     return (
         <div className="SideBar">
-            <NavButton path="inventario" icon={logoInventario}/>
-            <NavButton path="ventas" icon={logoVentas}/>
-            <NavButton path="reportes" icon={logoReportes}/>
-            <NavButton path="empleados" icon={logoEmpleados}/>
+            <NavButton path="inventario" icon={logoInventario} />
+            <NavButton path="ventas" icon={logoVentas} />
+            <NavButton path="reportes" icon={logoReportes} />
+            <NavButton path="empleados" icon={logoEmpleados} />
         </div>
     )
 }
