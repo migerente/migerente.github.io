@@ -27,7 +27,11 @@ export default function Login() {
                 if (json[0]['correcto']) {
                     cookies.set('loggedIn', 'yes')
                     cookies.set('userType', json[0]['perfil'])
+                    cookies.set('companyName', json[0]['Empresa'])
                     navigate('/app')
+                }
+                else {
+                    alert('credenciales incorrectos')
                 }
             })
             .catch(err => console.log(err))

@@ -12,8 +12,9 @@ export default function App() {
 
     function handleClick() {
         if (window.confirm('esta seguro de querer cerrar la sesión actual?')) {
-            cookies.set('loggedIn', 'no')
-            cookies.set('userType', '')
+            cookies.remove('loggedIn')
+            cookies.remove('userType')
+            cookies.remove('companyName')
             navigate('/login')
         }
     }
@@ -21,6 +22,7 @@ export default function App() {
     return (
         <>
             <NavBar>
+                <h2 className="company-name">{cookies.get('companyName')}</h2>
                 <div className="login-signup-buttons">
                     <button className="button" onClick={handleClick}>
                         cerrar sesión
