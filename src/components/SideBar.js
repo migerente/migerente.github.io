@@ -18,7 +18,7 @@ export default function SideBar() {
             <NavButton path="ventas" icon={logoVentas} />
             <NavButton path="reportes" icon={logoReportes} />
             {
-                userType === 1 ?
+                userType == 1 ?
                     <NavButton path="empleados" icon={logoEmpleados} />
                     : false
             }
